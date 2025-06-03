@@ -1,4 +1,4 @@
-namespace ModularASPNetCoreMVCTemplate.Models;
+namespace MyApp.Web.ViewModels.Shared;
 
 public class ErrorViewModel
 {
