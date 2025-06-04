@@ -1,6 +1,6 @@
 ﻿using System.Text.Json.Serialization;
 
-namespace MyApp.Services.Contracts.API_Models;
+namespace MyApp.Services.Abstractions.API_Models;
 
 public class ExampleApiModel
 {

@@ -17,9 +17,8 @@ public class Blog
     [MaxLength(BlogConstants.ExampleMinLength)]
     public string Content { get; set; } = null!;
 
-    [Required]
     [MaxLength(BlogConstants.ExampleMinLength)]
-    public string AdminNotes { get; set; } = null!;
+    public string? AdminNotes { get; set; }
 
     public DateTime Created { get; set; }
 

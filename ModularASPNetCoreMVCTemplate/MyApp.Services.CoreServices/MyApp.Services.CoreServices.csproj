@@ -7,6 +7,7 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\MyApp.Services.Abstractions\MyApp.Services.Abstractions.csproj" />
       <ProjectReference Include="..\MyApp.Services.DataServices\MyApp.Services.DataServices.csproj" />
     </ItemGroup>
 

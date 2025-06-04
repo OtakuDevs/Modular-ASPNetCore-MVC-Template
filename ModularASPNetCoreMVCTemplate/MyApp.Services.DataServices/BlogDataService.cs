@@ -1,10 +1,12 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using MyApp.Data.Database;
 using MyApp.Data.DataModels;
+using MyApp.Services.Abstractions.Attributes;
 using MyApp.Services.DataServices.Interfaces;
 
 namespace MyApp.Services.DataServices;
 
+[AutoRegisterService(ServiceLifetimeType.Scoped)]
 public class BlogDataService : IBlogDataService
 {
     private readonly AppDbContext _context;

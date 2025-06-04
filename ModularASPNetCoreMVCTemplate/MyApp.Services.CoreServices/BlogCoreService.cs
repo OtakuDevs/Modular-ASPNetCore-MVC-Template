@@ -1,9 +1,11 @@
 ﻿using MyApp.Data.DataModels.Enums;
+using MyApp.Services.Abstractions.Attributes;
 using MyApp.Services.CoreServices.Interfaces;
 using MyApp.Services.DataServices.Interfaces;
 
 namespace MyApp.Services.CoreServices;
 
+[AutoRegisterService(ServiceLifetimeType.Scoped)]
 public class BlogCoreService : IBlogCoreService
 {
     private readonly IBlogDataService _dataService;

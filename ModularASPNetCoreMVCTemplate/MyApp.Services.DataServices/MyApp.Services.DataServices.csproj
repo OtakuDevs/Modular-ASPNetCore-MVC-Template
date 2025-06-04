@@ -9,6 +9,7 @@
     <ItemGroup>
       <ProjectReference Include="..\MyApp.Data.Database\MyApp.Data.Database.csproj" />
       <ProjectReference Include="..\MyApp.Data.DataModels\MyApp.Data.DataModels.csproj" />
+      <ProjectReference Include="..\MyApp.Services.Abstractions\MyApp.Services.Abstractions.csproj" />
     </ItemGroup>
 
 </Project>

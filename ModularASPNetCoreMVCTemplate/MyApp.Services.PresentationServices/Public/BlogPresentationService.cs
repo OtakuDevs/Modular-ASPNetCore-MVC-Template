@@ -1,8 +1,10 @@
-﻿using MyApp.Services.DataServices.Interfaces;
+﻿using MyApp.Services.Abstractions.Attributes;
+using MyApp.Services.DataServices.Interfaces;
 using MyApp.Services.PresentationServices.Public.Interfaces;
 
 namespace MyApp.Services.PresentationServices.Public;
 
+[AutoRegisterService(ServiceLifetimeType.Scoped)]
 public class BlogPresentationService : IBlogPresentationService
 {
     private readonly IBlogDataService _dataService;

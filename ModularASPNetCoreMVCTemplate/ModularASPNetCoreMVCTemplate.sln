@@ -28,7 +28,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyApp.Services.Presentation
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyApp.Services.UtilityServices", "MyApp.Services.UtilityServices\MyApp.Services.UtilityServices.csproj", "{5B114E01-AA32-4AED-B3F0-601186F05F79}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyApp.Services.Contracts", "MyApp.Services.Contracts\MyApp.Services.Contracts.csproj", "{FBACAF0B-3887-4281-9E6F-41CD0C898F5B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyApp.Services.Abstractions", "MyApp.Services.Abstractions\MyApp.Services.Abstractions.csproj", "{FBACAF0B-3887-4281-9E6F-41CD0C898F5B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyApp.Web.ViewModels", "MyApp.Web.ViewModels\MyApp.Web.ViewModels.csproj", "{657AD6AE-20E4-4817-84F9-6B08EA849446}"
 EndProject

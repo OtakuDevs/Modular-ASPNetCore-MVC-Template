@@ -1,4 +1,4 @@
-namespace MyApp.Services.Contracts.DTOs;
+namespace MyApp.Services.Abstractions.DTOs;
 
 public class ExampleDto
 {
