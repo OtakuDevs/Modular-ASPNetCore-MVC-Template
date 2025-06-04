@@ -32,6 +32,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyApp.Services.Abstractions
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyApp.Web.ViewModels", "MyApp.Web.ViewModels\MyApp.Web.ViewModels.csproj", "{657AD6AE-20E4-4817-84F9-6B08EA849446}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyApp.Tests", "MyApp.Tests\MyApp.Tests.csproj", "{FFF5DD9D-68CE-4E35-9B69-B6809EA3F827}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".template.config", ".template.config", "{14FD06A9-F071-4944-9DB6-229CAC477CE4}"
+	ProjectSection(SolutionItems) = preProject
+		template.json = template.json
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -82,6 +89,10 @@ Global
 		{657AD6AE-20E4-4817-84F9-6B08EA849446}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{657AD6AE-20E4-4817-84F9-6B08EA849446}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{657AD6AE-20E4-4817-84F9-6B08EA849446}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FFF5DD9D-68CE-4E35-9B69-B6809EA3F827}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFF5DD9D-68CE-4E35-9B69-B6809EA3F827}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFF5DD9D-68CE-4E35-9B69-B6809EA3F827}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFF5DD9D-68CE-4E35-9B69-B6809EA3F827}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{9418EC21-452C-4AC3-B31C-B4670616EAC3} = {0792F69A-7061-4A01-817F-12C3ADF7FCC7}
@@ -95,5 +106,6 @@ Global
 		{5B114E01-AA32-4AED-B3F0-601186F05F79} = {95BF0C08-C845-4C32-BC2A-3958439B4342}
 		{FBACAF0B-3887-4281-9E6F-41CD0C898F5B} = {95BF0C08-C845-4C32-BC2A-3958439B4342}
 		{657AD6AE-20E4-4817-84F9-6B08EA849446} = {D61869F1-CFA2-4964-8529-4E746432D18E}
+		{FFF5DD9D-68CE-4E35-9B69-B6809EA3F827} = {B6513D4F-762A-42BD-8EAC-A823CD020921}
 	EndGlobalSection
 EndGlobal

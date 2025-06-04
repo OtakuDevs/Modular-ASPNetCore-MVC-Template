@@ -1,0 +1,18 @@
+{
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "OtakuDevs",
+  "classifications": [ "Web", "MVC", "Modular" ],
+  "identity": "OtakuDevs.ModularAspNetCoreMvcTemplate",
+  "name": "Modular ASP.NET Core MVC Template",
+  "shortName": "modularmvc",
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  },
+  "sourceName": "MyApp",
+  "preferNameDirectory": true,
+  "description": "A modular ASP.NET Core MVC project template by OtakuDevs."
+}
+
+}

@@ -5,6 +5,10 @@ using MyApp.Data.DataModels.Enums;
 
 namespace MyApp.Data.Database.Seeding;
 
+/// <summary>
+/// Provides the default configuration for seeding initial entity data
+/// into the database using Entity Framework Core.
+/// </summary>
 public class BlogsSeedConfiguration : IEntityTypeConfiguration<Blog>
 {
     public void Configure(EntityTypeBuilder<Blog> builder)

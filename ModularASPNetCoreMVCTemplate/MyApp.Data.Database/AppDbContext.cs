@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using MyApp.Data.Database.Configurations;
+using MyApp.Data.Database.Seeding;
 using MyApp.Data.DataModels;
 using MyApp.Data.DataModels.MappingTables;
 
@@ -21,7 +22,20 @@ public class AppDbContext : IdentityDbContext<ApplicationUser>
 
     protected override void OnModelCreating(ModelBuilder builder)
     {
-        builder.ApplyConfiguration(new TableRelationsConfiguration());
+        ApplyConfigurations(builder);
+        SeedData(builder);
+
         base.OnModelCreating(builder);
+    }
+
+    private static void ApplyConfigurations(ModelBuilder builder)
+    {
+        builder.ApplyConfiguration(new TableRelationsConfiguration());
+        builder.ApplyConfiguration(new DefaultRolesConfiguration());
+    }
+
+    private static void SeedData(ModelBuilder builder)
+    {
+        builder.ApplyConfiguration(new BlogsSeedConfiguration());
     }
 }

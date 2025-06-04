@@ -3,6 +3,10 @@ using MyApp.Data.Database;
 
 namespace ModularASPNetCoreMVCTemplate.Extensions;
 
+/// <summary>
+/// Contains extension methods for configuring and extending the <see cref="WebApplication"/> pipeline,
+/// such as applying database migrations or conditionally enabling middleware during application startup.
+/// </summary>
 public static class ApplicationBuilderExtensions
 {
     public static WebApplication ApplyMigrations(this WebApplication app, IWebHostEnvironment env)

@@ -8,6 +8,11 @@ using MyApp.Services.Abstractions.Attributes;
 
 namespace ModularASPNetCoreMVCTemplate.Extensions;
 
+/// <summary>
+/// Provides extension methods for registering services and configuration sources
+/// into the dependency injection container and application builder, including environment variables
+/// and application-specific services such as the database context.
+/// </summary>
 public static class ServiceCollectionExtensions
 {
     public static WebApplicationBuilder AddEnvironmentVariablesConfig(this WebApplicationBuilder builder)

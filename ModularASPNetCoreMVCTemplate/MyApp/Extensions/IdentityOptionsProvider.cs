@@ -2,6 +2,10 @@ using Microsoft.AspNetCore.Identity;
 
 namespace ModularASPNetCoreMVCTemplate.Extensions;
 
+/// <summary>
+/// Provides centralized configuration logic for setting up ASP.NET Core Identity options,
+/// such as password policies, lockout settings, and user requirements.
+/// </summary>
 public static class IdentityOptionsProvider
 {
     public static void ConfigureIdentityOptions(IdentityOptions options)
