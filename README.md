@@ -28,7 +28,7 @@ Modular ASPNET Core MVC Template/
 ├── MyApp.Tests/                    # Unit and integration tests
 │   └── Tests/
 ├── MyApp.Web/                      # Web/MVC project
-│   ├── MyApp/
+│   ├── Application/
 │   └── ViewModels/
 ├── restore-structure.ps1           # Restore folder structure on Windows
 ├── restore-structure.sh            # Restore folder structure on macOS/Linux
@@ -38,7 +38,51 @@ Modular ASPNET Core MVC Template/
 └── README.md
 ```
 
-> Each subfolder under `MyApp.Services/` corresponds to a **distinct project** (e.g., `MyApp.Services.Abstractions`, `MyApp.Services.CoreServices`, etc.) to enforce modularity and maintain clean separation of logic.
+> Each folder corresponds to a **distinct project** following the naming convention `MyApp.<ProjectName>` (e.g., `MyApp.Services.Abstractions`, `MyApp.Common.ValidationConstants`, `MyApp.Web.Application`) to enforce modularity and maintain a clean separation of concerns.
+
+---
+
+## 📁 Project Breakdown
+
+### MyApp.Common
+- **UtilityConstants**: Holds config keys, file paths, static settings (`ConfigurationConstants`), and status/error/log messages (`StatusMessages`).
+- **ValidationConstants**: Contains data model constraints (`DataModelsConstants`) and format constants like date formats and regex (`FormatConstants`).
+
+### MyApp.Data
+- **Database**: `AppDbContext` (inherits `IdentityDbContext<ApplicationUser>`) with configurations and seeders.
+- **Configurations**: DB table configurations (roles, relationships).
+- **Seeding**: Seed data configurations.
+- **DataModels**: Enums, mapping tables, and other database models.
+- **ApplicationUser**: An extended Identity user class to allow adding custom properties beyond the default IdentityUser.
+
+### MyApp.Services
+- **Abstractions**: API models, DTOs, and custom attributes (includes essential `[AutoRegisterService]` attribute for DI auto-registration).
+
+> **Note:** The `[AutoRegisterService]` attribute is used to automatically register services in the DI container. It should only be applied to classes that implement an interface, and specifies the service lifetime (Scoped, Transient, or Singleton). For example:
+
+```csharp
+[AutoRegisterService(ServiceLifetimeType.Scoped)]
+public class BlogService : IBlogService
+{
+    // Implementation
+}
+````
+- **CoreServices**: Acts as a bridge between controllers and data/presentation layers, handling workflows like data retrieval and presentation coordination.
+- **DataServices**: Manages all database operations.
+- **PresentationServices**: Services for views—formatting, populating viewmodels, etc.
+- **UtilityServices**: Static helpers, converters, extensions, and reusable logic (no DI registration needed).
+
+### MyApp.Tests
+- Unit and integration tests using Moq, NUnit, and .NET SDK test templates.
+
+### MyApp.Web
+- **ViewModels**: All web app viewmodels.
+- **Application**
+    - `Areas`: Admin area with controllers and views.
+    - `Extensions`:
+        - `IdentityOptionsProvider`: Identity configuration.
+        - `ServiceCollectionExtensions`: Predefined MVC service registrations.
+        - `ApplicationBuilderExtensions`: Middleware additions using method chaining.
 
 ---
 
