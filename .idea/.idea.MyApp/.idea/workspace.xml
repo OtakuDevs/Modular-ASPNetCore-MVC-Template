@@ -10,7 +10,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a2ce7870-5cef-4aa8-962b-6f8047b64b27" name="Changes" comment="">
+    <list default="true" id="a2ce7870-5cef-4aa8-962b-6f8047b64b27" name="Changes" comment="readme updates">
       <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/indexLayout.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
@@ -205,30 +205,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    ".NET Launch Settings Profile.MyApp: http.executor": "Run",
-    ".NET Project.MyApp.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "Shell Script.restore-structure.sh.executor": "Run",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/home/mokgul/Coding/TEST/demoApp23",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.keymap",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;.NET Launch Settings Profile.MyApp: http.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Project.MyApp.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;Shell Script.restore-structure.sh.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/mokgul/Coding/TEST/demoApp23&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
-      "JSON"
+  &quot;keyToStringList&quot;: {
+    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
+      &quot;JSON&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected=".NET Launch Settings Profile.MyApp: http">
     <configuration name="MyApp" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
@@ -349,7 +349,8 @@
       <workItem from="1749152125383" duration="114000" />
       <workItem from="1749154825237" duration="81000" />
       <workItem from="1749155093787" duration="301000" />
-      <workItem from="1749155783929" duration="768000" />
+      <workItem from="1749155783929" duration="2858000" />
+      <workItem from="1749238289251" duration="5092000" />
     </task>
     <task id="LOCAL-00001" summary="Initial .Common, .Services, .Data and .Web">
       <option name="closed" value="true" />
@@ -414,7 +415,9 @@
     <MESSAGE value="Application Builder Extensions for the Program.cs" />
     <MESSAGE value="Tests, Summary accross some important points, admin area, template config file" />
     <MESSAGE value="Structural update, template.json update and scripts for restoring structure" />
-    <option name="LAST_COMMIT_MESSAGE" value="Structural update, template.json update and scripts for restoring structure" />
+    <MESSAGE value="Structural update, template.json update and restore-structure scripts" />
+    <MESSAGE value="readme updates" />
+    <option name="LAST_COMMIT_MESSAGE" value="readme updates" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

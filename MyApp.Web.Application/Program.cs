@@ -1,3 +1,6 @@
+using ModularASPNetCoreMVCTemplate.Extensions;
+using MyApp.Extensions;
+
 namespace MyApp;
 
 public class Program
@@ -5,31 +8,30 @@ public class Program
     public static void Main(string[] args)
     {
         var builder = WebApplication.CreateBuilder(args);
+        builder
+            .AddEnvironmentVariablesConfig()
+            .Services
+            .AddDbContext(builder.Configuration)
+            .AddIdentity()
+            .AddControllersWithViewsService(builder.Environment)
+            .AddCookiePolicy()
+            .AddDeveloperPageException(builder.Environment)
+            .AddApplicationServices();
 
-        // Add services to the container.
-        builder.Services.AddControllersWithViews();
+        var webApplication = builder.Build();
+        webApplication
+            .ApplyMigrations(webApplication.Environment)
+            .UseDeveloperExceptionPageMiddleware(webApplication.Environment)
+            .UseExceptionHandlerMiddleware(webApplication.Environment)
+            .UseSecureConnectionMiddleware(webApplication.Environment)
+            .UseHttpsRedirectionMiddleware()
+            .UseStaticFilesMiddleware()
+            .UseRoutingMiddleware()
+            .UseAuthorizationMiddleware()
+            .UseAuthenticationMiddleware()
+            .UseEndpointsMiddleware()
+            .AddRazorPagesEndpoints();
 
-        var app = builder.Build();
-
-        // Configure the HTTP request pipeline.
-        if (!app.Environment.IsDevelopment())
-        {
-            app.UseExceptionHandler("/Home/Error");
-            // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
-            app.UseHsts();
-        }
-
-        app.UseHttpsRedirection();
-        app.UseStaticFiles();
-
-        app.UseRouting();
-
-        app.UseAuthorization();
-
-        app.MapControllerRoute(
-            name: "default",
-            pattern: "{controller=Home}/{action=Index}/{id?}");
-
-        app.Run();
+        webApplication.Run();
     }
 }
