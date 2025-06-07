@@ -10,30 +10,31 @@ This project originally started as an internal organizational template to help k
 
 ```
 Modular ASPNET Core MVC Template/
-├── .template.config/                # Contains template.json for dotnet templating
+├── .template.config/              # Contains template.json for dotnet templating
 │   └── template.json
-├── MyApp.sln                        # Pre-configured solution file
-├── MyApp.Common/                   # Shared constants and utilities
+├── MyApp.sln                      # Pre-configured solution file
+├── MyApp.Common/                  # Shared constants and utilities
 │   ├── UtilityConstants/
 │   └── ValidationConstants/
-├── MyApp.Data/                     # Data layer
+├── MyApp.Data/                    # Data layer
 │   ├── Database/
 │   └── DataModels/
-├── MyApp.Services/                 # Service layer split into distinct responsibilities
+├── MyApp.Services/                # Service layer split into distinct responsibilities
 │   ├── Abstractions/              # DTOs, API models, custom attributes
-│   ├── CoreServices/              # Acts as a bridge layer between controllers and lower-level services; handles full operations like data updates and presentation logic coordination
+│   ├── CoreServices/              # Acts as a bridge layer between controllers and lower-level services. Handles
+                                   # full operations like data updates and presentation logic coordination
 │   ├── DataServices/              # Services responsible for data access (e.g., repositories)
 │   ├── PresentationServices/      # Logic related to the web layer (view models, formatting)
 │   └── UtilityServices/           # Helpers, converters, and general-purpose reusable logic
-├── MyApp.Tests/                    # Unit and integration tests
+├── MyApp.Tests/                   # Unit and integration tests
 │   └── Tests/
-├── MyApp.Web/                      # Web/MVC project
+├── MyApp.Web/                     # Web/MVC project
 │   ├── Application/
 │   └── ViewModels/
-├── restore-structure.ps1           # Restore folder structure on Windows
-├── restore-structure.sh            # Restore folder structure on macOS/Linux
+├── restore-structure.ps1          # Restore folder structure on Windows
+├── restore-structure.sh           # Restore folder structure on macOS/Linux
 ├── .git/
-├── .idea/                          # Rider IDE config (optional)
+├── .idea/                         # Rider IDE config (optional)
 ├── .gitignore
 └── README.md
 ```
