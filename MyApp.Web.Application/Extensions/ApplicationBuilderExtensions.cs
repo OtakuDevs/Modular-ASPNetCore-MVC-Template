@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using MyApp.Data.Database;
 
-namespace ModularASPNetCoreMVCTemplate.Extensions;
+namespace MyApp.Extensions;
 
 /// <summary>
 /// Contains extension methods for configuring and extending the <see cref="WebApplication"/> pipeline,

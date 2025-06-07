@@ -2,7 +2,6 @@ using System.Reflection;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using ModularASPNetCoreMVCTemplate.Extensions;
 using MyApp.Data.Database;
 using MyApp.Data.DataModels;
 using MyApp.Services.Abstractions.Attributes;

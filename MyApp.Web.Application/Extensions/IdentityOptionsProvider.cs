@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Identity;
 
-namespace ModularASPNetCoreMVCTemplate.Extensions;
+namespace MyApp.Extensions;
 
 /// <summary>
 /// Provides centralized configuration logic for setting up ASP.NET Core Identity options,

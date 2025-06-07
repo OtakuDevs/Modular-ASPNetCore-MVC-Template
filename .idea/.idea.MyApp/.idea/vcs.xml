@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project version="4">
-  <component name="VcsDirectoryMappings">
-    <mapping directory="$USER_HOME$/.dotnet/sdk/8.0.406/Sdks/Microsoft.NET.Sdk/analyzers/build/config" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$" vcs="Git" />
-  </component>
-</project>

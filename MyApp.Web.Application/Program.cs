@@ -1,4 +1,3 @@
-using ModularASPNetCoreMVCTemplate.Extensions;
 using MyApp.Extensions;
 
 namespace MyApp;
