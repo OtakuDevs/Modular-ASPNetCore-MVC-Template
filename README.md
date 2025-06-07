@@ -124,7 +124,9 @@ This will scaffold a fully modular project with the original folder and solution
 
 If you use **Rider** or **Visual Studio** to create a new project from the template, the solution will be **flattened** (i.e., physical folder structure won't be preserved).
 
-To restore the original structure, run the appropriate script:
+To restore the original structure, you can simply **right-click the script file for your OS and select "Run"**, which is the easiest way.
+
+Or run the appropriate script from the command line:
 
 **On Windows (PowerShell):**
 
@@ -138,6 +140,7 @@ To restore the original structure, run the appropriate script:
 chmod +x restore-structure.sh
 ./restore-structure.sh
 ```
+
 
 📌 **Note for Rider Users:**  
 Scripts might not be visible in Solution Explorer by default. Use the **"Show All Files"** option to reveal untracked files in the project tree and include them if needed.
